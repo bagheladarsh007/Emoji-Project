@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emoji Project</title>
+    <script defer src="emojiList.js"></script>
+    <script defer src="script.js"></script>
+    <style>
+     body{
+      background-color: black;
+     }
+
+      li {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 25px;
+        border-bottom: 1px solid grey;
+        padding-bottom: 5px;
+        color: white;
+      }
+      .emoji {
+        width: 15%;
+      }
+      .aliases, .description {
+        width: 40%;
+        text-transform: capitalize;
+      }
+      .sub-btn{
+        width:7rem;
+        height: 2rem;
+      }
+
+      #emojiSearchBox{
+        width: 20rem;
+        height: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="color: wheat;">Emojee - Emoji 🔍 Application</h1>
+    <br>
+    <hr>
+    <input id="emojiSearchBox" type="search" placeholder="Emojee Search" />
+    <input class="sub-btn"  type="submit" value="Search">
+    <br>
+    <br>
+    <br>
+    <ul id="emoijUl"></ul>
+  </body>
+</html>
